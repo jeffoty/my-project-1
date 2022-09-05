@@ -306,5 +306,108 @@ footer{
     display:none;  
 }  
 .items{  
-    transform:scale(0.9);  
+    transform:scale(0.9);
+}}
+/* additional styling for the image slider in section 1 and menu dropdown*/
+.img-slider img{  
+    height:60vw;  
+    width:80vw;  
+}  
+.ham:active {  
+    color:red;  
 }   
+.menu {  
+    display:flex;  
+    flex-direction: column;  
+    align-items: center;  
+    }    
+.menu a ion-icon{  
+    position: absolute;  
+}  
+@keyframes slide1{  
+0%{  
+    left:0vw;  
+}  
+15%{  
+    left:0vw;  
+}  
+20%{  
+    left:-80vw;  
+}  
+32%{  
+    left:-80vw;  
+}  
+35%{  
+    left:-160vw;  
+}  
+47%{  
+    left:-160vw;  
+}  
+50%{  
+    left:-240vw;  
+}  
+63%{  
+    left:-240vw;  
+}  
+66%{  
+    left:-320vw;  
+}  
+79%{  
+    left:-320vw;  
+}  
+82%{  
+    left:-400vw;  
+}  
+100%{  
+    left:0vw;  
+}}  
+.menu ul{  
+    display:flex;  
+    flex-direction:column;  
+    position: absolute;  
+    width:100vw;  
+    height:100vh;  
+    background-color: black;  
+    left:0;  
+    top:0;  
+    z-index:11;  
+    align-items: center;  
+    justify-content: center;  
+    opacity:1;  
+}  
+.close{  
+    z-index:34;      
+    color:white;  
+    background-color: black;  
+}  
+.close:active{  
+    color:red;  
+}  
+.menu ul li{  
+    list-style: none;  
+    margin: 20px;  
+    border-top:3px solid white;  
+    width:80%;  
+    text-align:center;  
+    padding-top:10px;  
+}  
+.menu ul li a{  
+    text-decoration: none;  
+    padding-top: 10px;  
+    color:white;  
+    font-weight: 900;  
+}  
+.menu ul li a:hover{  
+    color:rgb(240, 197, 6);  
+}  
+.img-slider{  
+    display:flex;  
+    float:left;  
+    position:relative;  
+    width:80%;  
+    height:60%;  
+    animation-name:slide1;  
+    animation-duration: 10s;  
+    animation-iteration-count: infinite;  
+    transition-duration:2s ;  
+}  
