@@ -166,7 +166,8 @@ right:3px;
     flex-wrap: wrap;  
     justify-content:center;  
     margin:10px auto;  
-    background: skyblue;
+    background: #b1d7b4;
+
 }  
 .section2 .container .items{  
     margin: 10px;  
@@ -410,4 +411,57 @@ footer{
     animation-duration: 10s;  
     animation-iteration-count: infinite;  
     transition-duration:2s ;  
+}  
+/* additional css styling for the header, search bar and heading*/
+.section1{  
+    width:80%;  
+    overflow:hidden;  
+    justify-content: center;  
+    align-items: center;  
+    margin:0px auto;  
+}  
+.heading1{  
+    opacity: 1;  
+    position:relative;  
+    bottom:8px;  
+}  
+.search a{  
+    display:flex;  
+    flex-wrap: nowrap;  
+}  
+.heading1 .ham{  
+    background-color: black;  
+    color:white;  
+}  
+#input{  
+    width:200px;  
+    flex-shrink:2;  
+}  
+header{  
+    height:150px;  
+ }  
+}  
+@media screen and (max-width:550px){  
+.heading ul li{  
+    display:none;  
+}  
+.heading1{  
+    opacity: 1;  
+    bottom:8px;  
+}  
+header{  
+    height:250px;  
+    flex-wrap: wrap;  
+    display: flex;  
+    flex-direction: column;  
+}  
+#input{  
+    width:150px;  
+}  
+.close{  
+    z-index:34;}  
+.search a{  
+display:flex;  
+flex-wrap: nowrap;  
+ }  
 }  
