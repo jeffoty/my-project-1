@@ -276,3 +276,35 @@ footer{
     flex-wrap: wrap;  
     justify-content: center;  
 }  
+/* styling for the footer's text hover effect and transformation*/
+.footer2 .heading:hover{  
+    color:rgb(243, 168, 7) ;  
+}  
+.footer2 .div:hover{  
+    transform: scale(1.05);  
+}  
+.footer3 h4{  
+    margin:0 10px;  
+}  
+.footer2 div{  
+    margin:10px;  
+}  
+.menu{  
+    visibility:hidden;  
+}  
+.heading1 .ham:active{  
+    color: red;  
+}  
+.items{  
+    overflow:hidden;  
+}  
+.ham,.close{  
+    cursor:pointer;  
+}  
+@media screen and (max-width:1250px){  
+.heading ul li{  
+    display:none;  
+}  
+.items{  
+    transform:scale(0.9);  
+}   
