@@ -2,66 +2,63 @@
     margin: 0;  
     padding: 0;  
     box-sizing: border-box;  
-}
-/*styling on the header which includes styling the menu bar logo and hover effects on the text. */
+}  
 header{  
-    display: flex;  
-    justify-content: space-evenly;  
-    align-items: center;  
-    height:60px;  
-    width:100%;  
-    background:black;  
-    }  
+display: flex;  
+justify-content: space-evenly;  
+align-items: center;  
+height:60px;  
+width:100%;  
+background:black;  
+}  
 .heading ul{  
-    display:flex;  
-    }  
+display:flex;  
+}  
 .logo a{  
-    color:white;  
-    transition-duration: 1s;  
-    font-weight: 800;  
-    }  
+color:white;  
+transition-duration: 1s;  
+font-weight: 800;  
+}  
 .logo a:hover{  
-    color:rgb(240, 197, 6);  
-    transition-duration: 1s;  
-    }  
+color:rgb(240, 197, 6);  
+transition-duration: 1s;  
+}  
 .heading ul li{  
-    list-style: none;  
-    }  
+list-style: none;  
+}  
 .heading ul li a{  
-    margin:5px;  
-    text-decoration: none;  
-    color:black;  
-    font-weight: 500;  
-    position:relative;  
-    color:white;  
-    margin:2px 14px;  
-    font-size: 18px;  
-    transition-duration: 1s;  
-    }  
+margin:5px;  
+text-decoration: none;  
+color:black;  
+font-weight: 500;  
+position:relative;  
+color:white;  
+margin:2px 14px;  
+font-size: 18px;  
+transition-duration: 1s;  
+}  
 .heading ul li a:active{  
-    color:red;  
-    }  
+color:red;  
+}  
 .heading ul li a:hover{  
-    color:rgb(243, 168, 7);  
-    transition-duration: 1s;  
-    }  
+color:rgb(243, 168, 7);  
+transition-duration: 1s;  
+}  
 .heading ul li a::before{  
-    content:'';  
-    height:2px;  
-    width:0px;  
-    position:absolute;  
-    left:0;  
-    bottom:0;  
-    background-color: white;  
-    transition-duration: 1s;  
-    }  
+content:'';  
+height:2px;  
+width:0px;  
+position:absolute;  
+left:0;  
+bottom:0;  
+background-color: white;  
+transition-duration: 1s;  
+}  
 .heading ul li a:hover::before{  
-    width:100%;   
-    transition-duration: 1s;  
-    background-color:rgb(243, 168, 7);  
-    }  
-    /* additional styling in the header icon and search bar*/
-
+width:100%;   
+transition-duration: 1s;  
+background-color:rgb(243, 168, 7);  
+}  
 #input{  
 height:30px;  
 width:300px;  
@@ -91,121 +88,161 @@ header a ion-icon{
 position:relative;  
 right:3px;  
 }  
-/* styling the section 1 image slider*/
-
-section{
-    padding: 3rem 0 2rem;
-}
-
-
-
-    /* section styling and positioning of the book tiles*/
+.img-slider img{  
+height:720px;  
+width:1080px;  
+}  
+@keyframes slide{  
+0%{  
+left:0px;  
+}  
+15%{  
+left:0px;  
+}  
+20%{  
+left:-1080px;  
+}  
+32%{  
+left:-1080px; 
+}  
+35%{  
+left:-2160px;  
+}  
+47%{  
+left:-2160px;  
+}  
+50%{  
+left:-3240px;  
+}  
+63%{  
+left:-3240px;  
+}  
+66%{  
+left:-4320px;  
+}  
+79%{  
+left:-4320px;  
+}  
+82%{  
+left:-5400px;  
+}  
+100%{  
+left:0px;  
+}}  
+.img-slider{  
+display:flex;  
+float:left;  
+position:relative;  
+width:1080px;  
+height:720px;  
+animation-name:slide;  
+animation-duration: 10s;  
+animation-iteration-count: infinite;  
+transition-duration:2s ;  
+}  
 .heading1 {  
-        opacity:0;  
+opacity:0;  
 }  
 .search{  
-    display:flex;  
-    position: relative;  
+display:flex;  
+position: relative;  
 }  
 .section1{  
-    width:1080px;  
-    overflow:hidden;  
-    justify-content: center;  
-    align-items: center;  
-    margin:0px auto;  
+width:1080px;  
+overflow:hidden;  
+justify-content: center;  
+align-items: center;  
+margin:0px auto;  
 }  
 .section2 .container{  
-    display:flex;  
-    width:100%;  
-    height:max-content;  
-    flex-wrap: wrap;  
-    justify-content:center;  
-    margin:10px auto;  
-    background: #b1d7b4;
-
+display:flex;  
+width:100%;  
+height:max-content;  
+flex-wrap: wrap;  
+justify-content:center;  
+margin:10px auto;  
+background: skyblue;
 }  
 .section2 .container .items{  
-    margin: 10px;  
-    width:200px;  
-    height: 300px;  
-    background-color:white;  
-    border:2.5px solid black;  
-    border-radius: 12px;  
+margin: 10px;  
+width:200px;  
+height: 300px;  
+background-color:white;  
+border:2.5px solid black;  
+border-radius: 12px;  
 }  
 .section2 .container .items .name{  
-    text-align:center;  
-    background-color:rgb(240, 197, 6);  
-    height:25px;  
-    padding-top:4px;  
-    color:white;  
-    margin: 0;  
+text-align:center;  
+background-color:rgb(240, 197, 6);  
+height:25px;  
+padding-top:4px;  
+color:white;  
+margin: 0;  
 }  
 .section2 .container .items .price{  
-    float:left;  
-    padding-left:10px;  
-    display: block;  
-    width:100%;  
-    color:rgb(255, 0, 0);  
-    font-weight: 650;  
+float:left;  
+padding-left:10px;  
+display: block;  
+width:100%;  
+color:rgb(255, 0, 0);  
+font-weight: 650;  
 }  
 .section2 .container .items .info{  
-    padding-left:10px;  
-    color:rgb(243, 168, 7);  
+padding-left:10px;  
+color:rgb(243, 168, 7);  
 }  
 .section2 .container .items .img img{  
-    width:200px;  
-    height:200px;  
-    margin: 0;  
-    padding: 0;  
-    border-radius:12px;  
-    transition-duration:0.8s;  
+width:200px;  
+height:200px;  
+margin: 0;  
+padding: 0;  
+border-radius:12px;  
+transition-duration:0.8s;  
 }  
 .section2 .container .items .img {  
-    overflow: hidden;  
-    margin: 0;  
+overflow: hidden;  
+margin: 0;  
 }  
 .section2 .container .items:hover .img img{  
-    transform: scale(1.2);  
-    transition-duration:0.8s;  
-    border-radius:12px;  
-}     
-/* adding styling for my footer's social media icons*/
+transform: scale(1.2);  
+transition-duration:0.8s;  
+border-radius:12px;  
+}  
 footer{  
-    display:flex;  
-    flex-direction: column;  
-    background-color: black;  
-    align-items: center;  
-    color:white;  
+display:flex;  
+flex-direction: column;  
+background-color: black;  
+align-items: center;  
+color:white;  
 }  
 .footer1{  
-        display:flex;  
-        flex-direction: column;  
-        align-items: center;  
-        color:white;  
-        margin-top:15px;  
+    display:flex;  
+    flex-direction: column;  
+    align-items: center;  
+    color:white;  
+    margin-top:15px;  
 }  
 .social-media{  
-        display:flex;  
-        justify-content: center;  
-        color:white;  
-        flex-wrap: wrap;  
+    display:flex;  
+    justify-content: center;  
+    color:white;  
+    flex-wrap: wrap;  
 }  
 .social-media a{  
-        color:white;  
-        margin:20px;  
-        border-radius: 5px;  
-        margin-top:10px;  
-        color:white;  
- }  
+    color:white;  
+    margin:20px;  
+    border-radius: 5px;  
+    margin-top:10px;  
+    color:white;  
+}  
 .social-media a ion-icon{  
-        color:white;  
-        background-color: black;  
+    color:white;  
+    background-color: black;  
 }  
 .social-media a:hover ion-icon{  
-        color:red;  
-        transform: translateY(5px);  
+    color:red;  
+    transform: translateY(5px);  
 }  
-/* styling for various footer sections*/
 .footer2{  
     display: flex;  
     width:100%;  
@@ -232,7 +269,6 @@ footer{
     flex-wrap: wrap;  
     justify-content: center;  
 }  
-/* styling for the footer's text hover effect and transformation*/
 .footer2 .heading:hover{  
     color:rgb(243, 168, 7) ;  
 }  
@@ -262,9 +298,8 @@ footer{
     display:none;  
 }  
 .items{  
-    transform:scale(0.9);
-}}
-/* additional styling for the image slider in section 1 and menu dropdown*/
+    transform:scale(0.9);  
+}  
 .img-slider img{  
     height:60vw;  
     width:80vw;  
@@ -356,7 +391,17 @@ footer{
 .menu ul li a:hover{  
     color:rgb(240, 197, 6);  
 }  
-/* additional css styling for the header, search bar and heading*/
+.img-slider{  
+    display:flex;  
+    float:left;  
+    position:relative;  
+    width:80%;  
+    height:60%;  
+    animation-name:slide1;  
+    animation-duration: 10s;  
+    animation-iteration-count: infinite;  
+    transition-duration:2s ;  
+}  
 .section1{  
     width:80%;  
     overflow:hidden;  
