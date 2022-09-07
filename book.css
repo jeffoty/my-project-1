@@ -92,58 +92,13 @@ position:relative;
 right:3px;  
 }  
 /* styling the section 1 image slider*/
-.img-slider img{  
-    height:720px;  
-    width:1080px;  
-    }  
-    @keyframes slide{  
-    0%{  
-    left:0px;  
-    }  
-    15%{  
-    left:0px;  
-    }  
-    20%{  
-    left:-1080px;  
-    }  
-    32%{  
-    left:-1080px; 
-    }  
-    35%{  
-    left:-2160px;  
-    }  
-    47%{  
-    left:-2160px;  
-    }  
-    50%{  
-    left:-3240px;  
-    }  
-    63%{  
-    left:-3240px;  
-    }  
-    66%{  
-    left:-4320px;  
-    }  
-    79%{  
-    left:-4320px;  
-    }  
-    82%{  
-    left:-5400px;  
-    }  
-    100%{  
-    left:0px;  
-    }}  
-.img-slider{  
-    display:flex;  
-    float:left;  
-    position:relative;  
-    width:1080px;  
-    height:720px;  
-    animation-name:slide;  
-    animation-duration: 10s;  
-    animation-iteration-count: infinite;  
-    transition-duration:2s ;  
-    }  
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+
+
     /* section styling and positioning of the book tiles*/
 .heading1 {  
         opacity:0;  
@@ -400,17 +355,6 @@ footer{
 }  
 .menu ul li a:hover{  
     color:rgb(240, 197, 6);  
-}  
-.img-slider{  
-    display:flex;  
-    float:left;  
-    position:relative;  
-    width:80%;  
-    height:60%;  
-    animation-name:slide1;  
-    animation-duration: 10s;  
-    animation-iteration-count: infinite;  
-    transition-duration:2s ;  
 }  
 /* additional css styling for the header, search bar and heading*/
 .section1{  
